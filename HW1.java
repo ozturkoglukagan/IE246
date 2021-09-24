@@ -28,9 +28,20 @@ public class HW1 {
         */
     
         /*Question 2
-        primeNum(350, 2570);*/
         
+        primeNum(350, 2570);
+        
+        */
+        
+        /*Question 3
+        
+        int[] array={66,3,5,44,7,3,8,-5,9,22,6,-4,1250};
+        //System.out.println(array.length);
+        sumOdd(array);
+        
+        */
     
+        /*Question 4*/
     }
 
     public static int factorial(int number) {
@@ -68,4 +79,22 @@ public class HW1 {
         
         return true;
     } 
+
+    public static void sumOdd(int[] array) {
+        int count=0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]<0) {
+                
+            }else if (array[i]%2==1) {
+                count=array[i]+count;
+            }
+            
+        }
+       System.out.println(count);
+        
+    }
+
+    public static void name() {
+        
+    }
 }
