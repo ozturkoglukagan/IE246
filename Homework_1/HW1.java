@@ -1,3 +1,4 @@
+package Homework_1;
 /* Question 1
 Create a java program to find a factorial of that number.
 
@@ -41,7 +42,20 @@ public class HW1 {
         
         */
     
-        /*Question 4*/
+        /*Question 4
+        int[] array={66,3,5,44,7,3,8,-5,9,22,6,-4,1250};
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]+" ");
+
+        }
+        secMinValue(array);
+        System.out.println();
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]+" ");
+
+        }*/
+
+        
     }
 
     public static int factorial(int number) {
@@ -94,7 +108,17 @@ public class HW1 {
         
     }
 
-    public static void name() {
-        
+    public static void secMinValue(int[] array) {
+        int temp;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i+1; j < array.length; j++) {
+                if(array[i] > array[j]) {    
+                    temp = array[i];    
+                    array[i] = array[j];    
+                    array[j] = temp;
+                }
+            }
+        }
+        System.out.println(array[1]+" is the second smallest number.");
     }
 }
