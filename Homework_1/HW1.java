@@ -15,9 +15,9 @@ smallest "value" in a given sequence
 public class HW1 {
     
     public static void main(String[] args) {
-        /* Question 1
+       
         int number=4;
-        System.out.println(number+"! = "+factorial(number));*/
+        System.out.println(number+"! = "+factorial(number));
         
         /* Checking if isPrime method works or not
 
