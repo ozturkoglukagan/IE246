@@ -19,7 +19,7 @@ public class secMin {
         for (int i = 0; i < args.length; i++) {
             input = Integer.parseInt(args[i]);
             /*
-             * to test if my reading & parsing mechanism work as intended
+             * to test if my reading & parsing mechanism works as intended
              * System.out.println(input+10);
              */
 
@@ -29,7 +29,7 @@ public class secMin {
                 // to check if minValue exist
                 if (input < minValue) {
                     minValue = input;
-                    // saving the spot of the smallest number
+                    // saving the index of the smallest number
                     argPlace = i;
                 }
                 // to give a more meaningful error message to the end user
