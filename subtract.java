@@ -1,5 +1,15 @@
 public class subtract {
+   /*
+   Get 2 arguments from the console
    
+   java subtract 1 2
+   First number is larger and the difference is -1
+
+   java subtract 2 1
+   Second number is larger and the difference is 1
+
+
+   */
     public static void main(String[] args) {
         //initializing the 2 numbers we will use
         int number1=0;
