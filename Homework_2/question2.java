@@ -1,6 +1,6 @@
 package Homework_2;
 
-public class sort {
+public class question2 {
     public static void main(String[] args) {
         // creating the variable in the general scope to use it further
         int minArgsIndex = 0;
@@ -12,12 +12,12 @@ public class sort {
 
         // creating an order array to save the orders lenghs
         int[] order = new int[args.length];
-        
+
         // initializing the order array
         for (int i = 0; i < order.length; i++) {
             order[i] = 0;
         }
-        //creating thisOrder variable
+        // creating thisOrder variable
         int thisOrder = 1;
 
         // iterating for loop for every thisOrder
@@ -51,23 +51,38 @@ public class sort {
             thisOrder++;
 
         }
+        // taking the size of the given sequence
+        int size = args.length;
+        // assinging variables outside to use them out of for loops
+        double smallNum = 0;
+        double bigNum = 0;
 
-        // iterating through order length to match thisOrder values to i
-        for (int i = 1; i < order.length + 1; i++) {
+        //checking if size is even
+        if (size % 2 == 0) {
+            // iterating through order length to match thisOrder values to i
+            for (int i = 0; i < order.length; i++) {
 
-            // iterating through order array
-            for (int j = 0; j < order.length; j++) {
+                
+                if (order[i] == (size + 1) / 2) {
+                    smallNum = Double.parseDouble(args[i]);
+                }
+                if (order[i] == (size + 2) / 2) {
+                    bigNum = Double.parseDouble(args[i]);
+                }
 
-                // checking if i is equal to thisOrder number
-                if (order[j] == i) {
-
-                    // printing the number according to the order
-                    System.out.print(args[j] + " ");
+            }
+            // print the average of numbers whose orders are size/2 and size/2+1
+            System.out.println((smallNum + bigNum) / 2);
+        
+            // if size is odd
+        } else {
+            for (int i = 0; i < order.length; i++) {
+                //print the number whose order is size/2+1 
+                if (order[i] == (size + 1) / 2) {
+                    System.out.println(Double.parseDouble(args[i]));
                 }
             }
-
         }
 
     }
-
 }
