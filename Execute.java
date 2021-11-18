@@ -17,7 +17,7 @@ public class Execute {
         problemData.printData(); // I'd like this to print out all the given numbers. (4/10 pts)
         // For the given example, the output should exactly be: 12.0 11.0 1.0 2.0 13.0 4.6
 
-        problemData.printNthMinimum(4); // I'd like this to print out the n-th minimum with the given n on the screen. (6/10 pts)
+        problemData.printNthMinimum(5); // I'd like this to print out the n-th minimum with the given n on the screen. (6/10 pts)
         // For the given example, the output should exactly be: 4. minimum is 11
         // If we write problemData.printNthMinimum(5); here, the output should exactly be: 5. minimum is 12
     }
